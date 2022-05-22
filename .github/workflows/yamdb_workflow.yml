@@ -33,7 +33,6 @@ jobs:
         uses: actions/checkout@v2 
       - name: Set up Docker Buildx
         run: | 
-          cd ..
           cd infra/
           docker-compose up -d
       - name: Login to Docker 
