@@ -11,9 +11,8 @@ services:
     image: sbochina/yamdb_final:latest
     restart: always
     volumes:
-      - static_value:/app/static/
-      - media_value:/app/media/
-      - ../api_yamdb/redoc.yaml:/app/static/redoc.yaml
+      - infra_static_value:/app/static/
+      - infra_media_value:/app/media/
     depends_on:
       - db
     env_file:
@@ -24,12 +23,12 @@ services:
       - "80:80"
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-      - static_value:/var/html/static/
-      - media_value:/var/html/media/
+      - infra_static_value:/var/html/static/
+      - infra_media_value:/var/html/media/
 
     depends_on:
       - web
 
 volumes:
-  static_value:
-  media_value:
+  infra_static_value:
+  infra_media_value:
