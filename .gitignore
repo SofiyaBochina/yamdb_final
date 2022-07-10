@@ -150,3 +150,7 @@ api_yamdb/static/data/
 !api_yamdb/static/redoc.yaml
 posts/static/
 media/
+<<<<<<< HEAD
+=======
+!static/redoc.yaml
+>>>>>>> 82021b0bf1bfeee13b1701713144870e28fe96d0
