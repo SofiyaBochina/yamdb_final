@@ -1,6 +1,6 @@
 ![example workflow](https://github.com/SofiyaBochina/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 # YaMDB API в контейнере
-Учебный проект "YaMDB API в контейнере".
+Учебный  проект "YaMDB API в контейнере".
 
 ## Шаблон наполнения env-файла
 ```
